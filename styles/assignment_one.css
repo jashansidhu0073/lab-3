@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #706f6f; 
+}
+
+ /* Mobile  */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 10px; 
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .card {
+      flex-basis: calc(50% - 10px); 
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1025px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+  }
